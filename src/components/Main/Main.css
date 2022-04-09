@@ -1,0 +1,12 @@
+.page {
+    background: linear-gradient(to right, #ff7b5c, #ff6c81);
+    height: 100vh;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .page {
+        flex-direction: column;
+        align-items: center;
+    }
+}

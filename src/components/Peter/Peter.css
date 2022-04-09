@@ -1,0 +1,37 @@
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animate {
+    0% {
+        margin-right: 0rem;
+    }
+    50% {
+        margin-right: 6rem;
+        transition: transform .1s ease;
+        transform: scale(1.05)
+    }
+
+    100% {
+        margin-right: 0rem;
+    }
+}
+
+.petr {
+    height: 35%;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,105 @@
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.form-background {
+    background-color: white;
+    border-radius: 18px;
+    height: 440px;
+    width: 42vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.inputField, .error {
+    width: 74%;
+    height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-indent: 10px;
+    margin-top: -15px;
+}
+
+.error {
+    border-color: rgb(199, 67, 67);
+}
+
+.errormsg {
+    color: red;
+    float: left !important;
+}
+
+h5 {
+    margin-left: 8px;
+    margin-bottom: 5px;
+    text-align: left !important;
+    padding-left: 3em;
+}
+
+#fun-fact {
+    height: 10vh;
+    overflow: hidden;
+    resize: none;
+    margin-top: 0px;
+}
+
+#charLeft, #charRight {
+    font-size: 9px;
+    float: right;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+#button {
+    margin-left: 14rem;
+    background-color: #f39580;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 10.5vh;
+}
+
+#button:hover {
+    transition: transform 0.2s ease-in;
+    transform: scale(1.05) ;
+}
+
+@media only screen and (max-width: 768px) {
+    .left {
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+
+    .form-background {
+        height: 90%;
+        width: 70%
+    }
+
+    .inputField, .error {
+        height: 15px;
+    }
+
+    #fun-fact {
+        height: 8vh;
+    }
+
+    h5 {
+        padding-left: 25px;
+        font-size: 10px;
+    }
+
+    #button {
+        margin-left: 140px;
+    }
+}
